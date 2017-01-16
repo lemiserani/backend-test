@@ -21,6 +21,3 @@ Em seguida poderá testar a aplicação seguindo os passos dos testes funcionais
 
 ### Sobre ###
 Leandro Junqueira Garcia Miserani
-
-   
-   
