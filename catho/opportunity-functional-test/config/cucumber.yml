@@ -1,0 +1,3 @@
+default: --no-source --color
+
+local_opportunity:                  ENV="local" debug=true 

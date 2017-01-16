@@ -1,0 +1,16 @@
+source 'https://rubygems.org'
+
+
+gem 'mime-types', '~> 1.16'
+gem 'cucumber'
+gem 'rspec', :require => 'spec'
+gem 'httparty'
+gem 'pry'
+gem 'json'
+gem 'pry-byebug'
+gem 'colorize'
+gem 'net-ssh'
+gem 'json-compare', '~> 0.1.8'
+gem 'easy_diff'     #to compare catalog json regardless the order of the tags
+
+gem 'differ', '0.1.2'

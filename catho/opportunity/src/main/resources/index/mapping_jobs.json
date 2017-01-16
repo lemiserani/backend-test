@@ -1,0 +1,39 @@
+{
+  "jobs": {
+    "_all": {
+      "enabled": false
+    },
+    "properties": {
+      "title": {
+        "type": "string",
+        "fielddata": true
+      },
+      "description": {
+        "type": "string",
+        "fielddata": true
+      },
+      "salario": {
+        "type": "string",
+        "fielddata": true
+      },
+      "cidade": {
+        "type": "string",
+        "fields": {
+          "raw": {
+            "type": "text",
+            "analyzer": "search_analyser"
+          }
+        }
+      },
+      "cidadeFormated": {
+        "type": "string",
+        "fields": {
+          "raw": {
+            "type": "text",
+            "analyzer": "search_analyser"
+          }
+        }
+      }
+    }
+  }
+}

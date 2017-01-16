@@ -1,0 +1,9 @@
+$LOAD_PATH.unshift(File.dirname(__FILE__))
+require 'rubygems'
+require 'cucumber'
+require 'cucumber/rake/task'
+
+Cucumber::Rake::Task.new(:local_opportunity) do |t|
+  t.profile = 'local_opportunity'
+end
+
