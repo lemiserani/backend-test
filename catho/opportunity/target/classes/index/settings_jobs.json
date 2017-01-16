@@ -1,0 +1,36 @@
+{
+  "index": {
+    "number_of_shards": "3",
+    "number_of_replicas": "0",
+    "analysis": {
+      "filter": {
+        "stopwords_filter": {
+          "type": "stop",
+          "stopwords_path": "files/stopwords.txt",
+          "ignore_case": "true"
+        },
+        "synonyms_filter": {
+          "type": "synonym",
+          "synonyms_path": "files/synonyms.txt",
+          "ignore_case": "true"
+        },
+        "english_stemmer": {
+          "type": "stemmer",
+          "language": "english"
+        }
+      },
+      "analyzer": {
+        "search_analyser": {
+          "tokenizer": "classic",
+          "filter": [
+            "lowercase",
+            "asciifolding",
+            "stopwords_filter",
+            "synonyms_filter",
+            "english_stemmer"
+          ]
+        }
+      }
+    }
+  }
+}
